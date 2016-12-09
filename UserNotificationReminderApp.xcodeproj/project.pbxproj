@@ -22,6 +22,7 @@
 		EB5D36711DFB439200841080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB5D36741DFB439200841080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB5D36761DFB439200841080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB5D367C1DFB607F00841080 /* UserNotificationReminderApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UserNotificationReminderApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		EB5D36691DFB439200841080 /* UserNotificationReminderApp */ = {
 			isa = PBXGroup;
 			children = (
+				EB5D367C1DFB607F00841080 /* UserNotificationReminderApp.entitlements */,
 				EB5D366A1DFB439200841080 /* AppDelegate.swift */,
 				EB5D366C1DFB439200841080 /* ViewController.swift */,
 				EB5D366E1DFB439200841080 /* Main.storyboard */,
@@ -96,8 +98,13 @@
 				TargetAttributes = {
 					EB5D36661DFB439200841080 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 6X85PLZ26L;
+						DevelopmentTeam = FGNAM5PJD7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -259,7 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6X85PLZ26L;
+				DEVELOPMENT_TEAM = FGNAM5PJD7;
 				INFOPLIST_FILE = UserNotificationReminderApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.98chimp.UserNotificationReminderApp;
@@ -272,7 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6X85PLZ26L;
+				DEVELOPMENT_TEAM = FGNAM5PJD7;
 				INFOPLIST_FILE = UserNotificationReminderApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.98chimp.UserNotificationReminderApp;
